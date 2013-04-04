@@ -1,0 +1,3 @@
+sudo echo "" || exit
+/home/gunnarjv/bin/screenlock
+sudo pm-suspend --auto-quirks

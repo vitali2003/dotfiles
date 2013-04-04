@@ -1,0 +1,3 @@
+setxkbmap is dvorak
+# setxkbmap -layout is -variant dvp -option compose:102 -option numpad:shift3 -option kpdl:semi -option keypad:atm -option caps:shift
+xmodmap ~/.xmodmaprc
