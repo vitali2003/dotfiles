@@ -178,7 +178,7 @@ bar {
         urgent_workspace   #000000 #fafa55
     }
 }
-bind Control+67 exec iskd
+bind Control+67 exec iskd && xset r rate 180 100
 #&& xset r rate 250 100
 bind Control+68 exec setxkbmap is
 
@@ -191,3 +191,6 @@ bindsym Print exec scrot -e 'mv $f /tmp/ && gimp /tmp/$f'
 # scrot & gimp - select window or rectangle
 bindsym Mod1+Print exec scrot -s -e 'mv $f /tmp/ && gimp /tmp/$f'
 
+#Start firefox (browser)
+bindsym $mod+b exec firefox
+bindsym $mod+n exec nautilus --no-desktop
