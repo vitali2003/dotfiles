@@ -24,6 +24,10 @@ nore ; :
 set ignorecase
 set smartcase
 
+" Open split windows at bottom and to the right.
+set splitbelow
+set splitright
+
 " we want relative number not in insert mode
 function! NumberToggle()
 	if(&relativenumber == 1)
