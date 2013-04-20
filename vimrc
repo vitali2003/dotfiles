@@ -58,6 +58,7 @@ set runtimepath^=~/.vim/bundle/taglist.vim
 :map <Leader>k <C-w>k
 
 :map <Leader>w <C-w>q "Close window
+:map <Leader>s :w<CR>
 :map <Leader>n :NERDTreeToggle<CR>
 
 " We want to focus on Tlist when we open it.
