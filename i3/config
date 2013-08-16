@@ -194,3 +194,4 @@ bindsym Mod1+Print exec scrot -s -e 'mv $f /tmp/ && gimp /tmp/$f'
 #Start firefox (browser)
 bindsym $mod+b exec firefox
 bindsym $mod+n exec nautilus --no-desktop
+bindsym $mod+w exec wicd-client

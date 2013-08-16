@@ -45,3 +45,6 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+
+export PATH=~/Downloads/adt-bundle-linux-x86_64-20130522/sdk/platform-tools:$PATH
+export PATH=~/Downloads/adt-bundle-linux-x86_64-20130522/sdk/tools:$PATH

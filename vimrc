@@ -18,6 +18,11 @@ set incsearch                   " highlight as we search however
 set backupdir-=.
 set backupdir^=~/tmp,/tmp
 
+
+" persistent undo buffer
+set undodir=/home/gunnarjv/vimundo/
+set undofile
+
 nore ; :
 
 " We want case sensitive search only if search contains uppercase
