@@ -1,6 +1,7 @@
 alias c='cd'
 alias ack='ack-grep'
 alias tmux='tmux -2'
+alias python='ipython'
 
 alias runs='python manage.py runserver'
 alias tests='python manage.py test'

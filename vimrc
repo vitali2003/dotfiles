@@ -66,6 +66,9 @@ set runtimepath^=~/.vim/bundle/taglist.vim
 :map <Leader>s :w<CR>
 :map <Leader>n :NERDTreeToggle<CR>
 
+:map <Leader>" <C-w>s 
+:map <Leader>% <C-w>v
+
 " We want to focus on Tlist when we open it.
 let Tlist_GainFocus_On_ToggleOpen = 1
 :map <Leader>t :TlistToggle<CR>
