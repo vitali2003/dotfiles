@@ -4,6 +4,8 @@ autoload -U compinit && compinit
 # aliases
 source $HOME/.bash_aliases
 
+# Add personal binary files to path
+export PATH="/home/gunnarjv/bin/:$PATH"
 
 # Oh-my-zsh
 # Path to your oh-my-zsh configuration.
