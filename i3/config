@@ -182,7 +182,8 @@ bind Control+67 exec iskd
 bind Control+68 exec setxkbmap is
 
 exec iskd # Would be better suited in .xinitrc probably
-exec dropbox start # start dropbox daemon
+#exec dropbox start # start dropbox daemon
+exec ~/.dropbox-dist/dropboxd # start dropbox daemon
 
 exec --no-startup-id nm-applet
 

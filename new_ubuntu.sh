@@ -39,6 +39,8 @@ echo "Y" | apt-get install vlc browser-plugin-vlc
 echo "Y" | apt-get install python-pip
 echo "Y" | apt-get install okular
 
+echo "Y" | apt-get install openjdk-7-jre
+
 # Install oh-my-zsh
 wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh;
 # "-" as filename in wget is supposed to be stream, but a file is also created.
