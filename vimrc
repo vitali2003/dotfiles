@@ -50,7 +50,6 @@ autocmd InsertLeave * :set relativenumber
 " Plugins
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set runtimepath^=~/.vim/bundle/nerdtree
-"set runtimepath^=~/.vim/bundle/supertab
 set runtimepath^=~/.vim/bundle/taglist.vim
 
 "Overwrite <Leader>, that is backslash by default.
