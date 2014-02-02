@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #################
-# For now the command ./.solarized-terminal/solarize must 
+# For now the command ./.solarized-terminal/install.sh must 
 # be run manually.
 #################
 
@@ -102,5 +102,5 @@ su gunnarjv -c "git clone https://github.com/scrooloose/nerdtree.git .vim/bundle
 echo "Installing terminal theme"
 #su gunnarjv -c "git clone git://github.com/sigurdga/gnome-terminal-colors-solarized.git .solarized-terminal";
 
-echo "Remember to run './.solarized-terminal/solarize'"
+echo "Remember to run './.solarized-terminal/install.sh
 echo "and to install dropbox."
