@@ -88,6 +88,7 @@ echo "Creating symlinks to dotfiles repo"
 #ln -s ~/.dotfiles/zshrc ~/.zshrc
 #ln -s ~/.dotfiles/bash_aliases ~/.bash_aliases
 #ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
+#ln -s ~/.dotfiles/xmodmaprc ~/.xmodmaprc
 #ln -s ~/.dotfiles/prose.zsh-theme ~/.oh-my-zsh/themes/prose.zsh-theme
 
 # Installing vim plugins

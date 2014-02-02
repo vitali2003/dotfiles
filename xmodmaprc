@@ -1,6 +1,2 @@
 keycode 24 = dead_acute quotedbl dead_diaeresis apostrophe dead_diaeresis apostrophe
 keycode 61 = thorn Thorn z Z z Z
-remove lock = Caps_Lock
-keysym Caps_Lock = BackSpace
-! add lock = F1
-! keysym F1 = Caps_Lock
