@@ -38,6 +38,7 @@ echo "Y" | apt-get install zsh;
 echo "Y" | apt-get install vlc browser-plugin-vlc
 echo "Y" | apt-get install python-pip
 echo "Y" | apt-get install okular
+echo "Y" | apt-get install htop
 
 echo "Y" | apt-get install openjdk-7-jre
 
