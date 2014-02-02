@@ -1,5 +1,6 @@
 setxkbmap is dvorak
 setxkbmap -option caps:backspace
 setxkbmap -option shift:both_capslock # Hold both shifts for caps
+xset r rate 180 100
 xmodmap -e "clear Lock"
 xmodmap ~/.xmodmaprc

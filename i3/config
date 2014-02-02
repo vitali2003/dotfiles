@@ -178,12 +178,10 @@ bar {
         urgent_workspace   #000000 #fafa55
     }
 }
-bind Control+67 exec iskd && xset r rate 180 100
-#&& xset r rate 250 100
+bind Control+67 exec iskd
 bind Control+68 exec setxkbmap is
 
 exec iskd # Would be better suited in .xinitrc probably
-exec xset r rate 180 100 # kbd repeat rate. doesn't belong here.
 exec dropbox start # start dropbox daemon
 
 exec --no-startup-id nm-applet
