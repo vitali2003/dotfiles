@@ -1,7 +1,8 @@
-# autojump and tab completion for it
+# autojump and tab completion j
 source /usr/share/autojump/autojump.zsh 
 autoload -U compinit && compinit
-# aliases
+
+# Aliases
 source $HOME/.bash_aliases
 
 # Add personal binary files to path
@@ -45,31 +46,4 @@ ZSH_THEME="prose"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-
-# Customize to your needs...
-
-export PATH=$HOME/.cabal/bin:$PATH
-
-#begin numenta
-# Installation path
- export NTA=$HOME/nta/eng
- # Target source/repo path. Defaults to $PWD
- # Don't forget change the /PATH/
- export NUPIC=$HOME/Documents/nupic/nupic
- # Convenience variable for temporary build files
- export BUILDDIR=/tmp/ntabuild
- # Number of jobs to run in parallel (optional)
- export MK_JOBS=3
-
- # Set up the rest of the necessary env variables. Must be done after
- # setting $NTA.
- source $NUPIC/env.sh
- #end numenta
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-# For virtual env obv.
-export WORKON_HOME=$HOME/.virtualenvs 
-source /usr/local/bin/virtualenvwrapper.sh 
-export PIP_VIRTUALENV_BASE=$WORKON_HOME
+# End oh-my-zsh
