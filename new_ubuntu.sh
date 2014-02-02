@@ -92,12 +92,11 @@ echo "Creating symlinks to dotfiles repo"
 
 # Installing vim plugins
 echo "Installing vim plugins"
-#su gunnarjv -c "git clone https://github.com/scrooloose/nerdtree.git .vim/bundle/nerdtree"
+su gunnarjv -c "git clone https://github.com/scrooloose/nerdtree.git .vim/bundle/nerdtree"
 # exuberant-ctags for taglist.vim
 #apt-get install exuberant-ctags
-su gunnarjv -c "git clone https://github.com/vim-scripts/taglist.vim.git .vim/bundle/taglist.vim"
-su gunnarjv -c "git clone https://github.com/vim-scripts/taglist.vim.git .vim/bundle/taglist.vim"
-su gunnarjv -c "git clone https://github.com/kien/ctrlp.vim.git .vim/bundle/ctrlp.vim"
+#su gunnarjv -c "git clone https://github.com/vim-scripts/taglist.vim.git .vim/bundle/taglist.vim"
+#su gunnarjv -c "git clone https://github.com/kien/ctrlp.vim.git .vim/bundle/ctrlp.vim"
 
 # Install terminal theme
 echo "Installing terminal theme"
