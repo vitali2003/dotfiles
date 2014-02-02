@@ -1,3 +1,6 @@
 setxkbmap is dvorak
+setxkbmap -option caps:backspace
+setxkbmap -option shift:both_capslock # Hold both shifts for caps
+xmodmap -e "clear Lock"
 # setxkbmap -layout is -variant dvp -option compose:102 -option numpad:shift3 -option kpdl:semi -option keypad:atm -option caps:shift
 xmodmap ~/.xmodmaprc
