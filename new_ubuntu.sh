@@ -71,7 +71,6 @@ apt-get install sublime-text
 echo "Cloning my dotfiles repo"
 su gunnarjv -c "git clone https://github.com/gunnarjv/dotfiles.git"
 
-# Currently I'm not sure if I want xmodmaprc
 echo "Backing up old dotfiles"
 mkdir -p ".dotfiles_old/"
 mv ~/.i3 ".dotfiles_old/"
