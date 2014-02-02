@@ -1,5 +1,7 @@
 set relativenumber			" line numbers
+set number			" Some interaction makes the first two lines show rel. num. except for current line 
 set mouse=a			" mouse selects visually?	      
+set expandtab
 set tabstop=4		" tabs are size 4
 set autoindent 		" set the cursor at same indent as line above
 set scrolloff=3 " Minimum lines to keep above and below cursor
@@ -13,7 +15,7 @@ set ai
 filetype indent on
 set shiftwidth=4 
 
-set incsearch                   " highlight as we search however
+set incsearch " highlight as we search however
 
 set backupdir-=.
 set backupdir^=~/tmp,/tmp
@@ -41,8 +43,6 @@ function! NumberToggle()
 	    set relativenumber
     endif
 endfunc
-
-nnoremap <C-n> :call NumberToggle()<cr>
 
 autocmd InsertEnter * :set number
 autocmd InsertLeave * :set relativenumber
@@ -84,5 +84,4 @@ let g:Powerline_cache_enabled = 1
 let g:Powerline_cache_file = expand('$TMP/Powerline.cache')
 set t_Co=256
 colorscheme molokai
-
 
