@@ -88,12 +88,12 @@ echo "Creating symlinks to dotfiles repo"
 #ln -s ~/.dotfiles/zshrc ~/.zshrc
 #ln -s ~/.dotfiles/bash_aliases ~/.bash_aliases
 #ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
-#ln -s ~/.dotfiles/xmodmaprc ~/.xmodmaprc
+ln -s ~/.dotfiles/xmodmaprc ~/.xmodmaprc
 #ln -s ~/.dotfiles/prose.zsh-theme ~/.oh-my-zsh/themes/prose.zsh-theme
 
 # Installing vim plugins
 echo "Installing vim plugins"
-su gunnarjv -c "git clone https://github.com/scrooloose/nerdtree.git .vim/bundle/nerdtree"
+#su gunnarjv -c "git clone https://github.com/scrooloose/nerdtree.git .vim/bundle/nerdtree"
 # exuberant-ctags for taglist.vim
 #apt-get install exuberant-ctags
 #su gunnarjv -c "git clone https://github.com/vim-scripts/taglist.vim.git .vim/bundle/taglist.vim"
@@ -103,5 +103,5 @@ su gunnarjv -c "git clone https://github.com/scrooloose/nerdtree.git .vim/bundle
 echo "Installing terminal theme"
 #su gunnarjv -c "git clone git://github.com/sigurdga/gnome-terminal-colors-solarized.git .solarized-terminal";
 
-echo "Remember to run './.solarized-terminal/install.sh
+echo "Remember to run './.solarized-terminal/install.sh"
 echo "and to install dropbox."
