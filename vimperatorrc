@@ -1,6 +1,6 @@
 " tab
-nnoremap l <C-n>
-nnoremap h <C-p>
+nnoremap <S-j> <C-n>
+nnoremap <S-k> <C-p>
 nnoremap <silent> <C-l> :tabmove! +1<CR>
 nnoremap <silent> <C-h> :tabmove! -1<CR>
 
