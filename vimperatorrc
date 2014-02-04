@@ -1,0 +1,12 @@
+" tab
+nnoremap l <C-n>
+nnoremap h <C-p>
+nnoremap <silent> <C-l> :tabmove! +1<CR>
+nnoremap <silent> <C-h> :tabmove! -1<CR>
+
+" scroll
+nnoremap j 3j
+nnoremap k 3k
+
+
+noremap <silent> <C-r> :restart<CR>

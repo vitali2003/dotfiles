@@ -68,7 +68,7 @@ echo "Backing up old dotfiles"
 old_dotfiles_dir=".dotfiles_old/"
 mkdir -p $old_dotfiles_dir
 dotfiles=( "i3" "vim" "vimrc" "bin" "zshrc" "bash_aliases"
-                   "tmux.conf" "xmodmaprc" )
+                   "tmux.conf" "xmodmaprc" "vimperatorrc" )
 for dotfile_old in ${dotfiles[@]}
 do
     mv ~/.$dotfile_old $old_dotfiles_dir
