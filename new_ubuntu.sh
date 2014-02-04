@@ -24,23 +24,16 @@ echo "enabled=False" >> ~/.config/user-dirs.conf
 # Install software
 echo "Installing must-have software"
 apt-get update;
-echo "Y" | apt-get install vim;
-echo "Y" | apt-get install git;
+software=( "vim" "git" "tmux" "chromium-browser" "ipython" "htop"
+           "ack-grep" "autojump" "zsh" "vlc browser-plugin-vlc"
+           "python-pip" "okular" "openjdk-7-jre")
+for program in ${software[@]}
+do
+    echo "Y" | apt-get install $program
+done
 git config --global user.email gunnarjv@gmail.com
 git config --global user.name gunnarjv
 git config --global push.default simple
-echo "Y" | apt-get install tmux;
-echo "Y" | apt-get install chromium-browser;
-echo "Y" | apt-get install ipython;
-echo "Y" | apt-get install ack-grep;
-echo "Y" | apt-get install autojump;
-echo "Y" | apt-get install zsh;
-echo "Y" | apt-get install vlc browser-plugin-vlc
-echo "Y" | apt-get install python-pip
-echo "Y" | apt-get install okular
-echo "Y" | apt-get install htop
-
-echo "Y" | apt-get install openjdk-7-jre
 
 # Install oh-my-zsh
 wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh;
@@ -72,25 +65,20 @@ echo "Cloning my dotfiles repo"
 su gunnarjv -c "git clone https://github.com/gunnarjv/dotfiles.git"
 
 echo "Backing up old dotfiles"
-mkdir -p ".dotfiles_old/"
-mv ~/.i3 ".dotfiles_old/"
-mv ~/.vim ".dotfiles_old/"
-mv ~/.vimrc ".dotfiles_old/"
-mv ~/.bin ".dotfiles_old/"
-mv ~/.zshrc ".dotfiles_old/"
-mv ~/.bash_aliases ".dotfiles_old/"
-mv ~/.tmux.conf ".dotfiles_old/"
+old_dotfiles_dir=".dotfiles_old/"
+mkdir -p $old_dotfiles_dir
+dotfiles=( "i3" "vim" "vimrc" "bin" "zshrc" "bash_aliases"
+                   "tmux.conf" "xmodmaprc" )
+for dotfile_old in ${dotfiles[@]}
+do
+    mv ~/.$dotfile_old $old_dotfiles_dir
+done
 
-# Make symbolic links to repo
 echo "Creating symlinks to dotfiles repo"
-ln -s ~/.dotfiles/i3 ~/.i3
-ln -s ~/.dotfiles/vim ~/.vim
-ln -s ~/.dotfiles/vimrc ~/.vimrc
-ln -s ~/.dotfiles/bin ~/bin
-ln -s ~/.dotfiles/zshrc ~/.zshrc
-ln -s ~/.dotfiles/bash_aliases ~/.bash_aliases
-ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
-ln -s ~/.dotfiles/xmodmaprc ~/.xmodmaprc
+for dotfile in ${dotfiles[@]}
+do
+    ln -s ~/.dotfiles/$dotfile ~/.$dotfile
+done
 ln -s ~/.dotfiles/prose.zsh-theme ~/.oh-my-zsh/themes/prose.zsh-theme
 
 # Installing vim plugins
