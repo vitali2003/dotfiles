@@ -108,3 +108,4 @@ su gunnarjv -c "git clone git://github.com/sigurdga/gnome-terminal-colors-solari
 echo "Remember to run './.solarized-terminal/install.sh"
 echo "and to install dropbox."
 echo "'sudo update-alternatives --config editor' to set vim as default editor"
+echo "aaaand move prose theme to oh-my-zsh."
