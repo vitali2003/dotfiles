@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="options" mtime="1391535089" type="list" ltype="string">
+		<li type="string">
+			<stringvalue>caps	caps:backspace</stringvalue>
+		</li>
+	</entry>
+	<entry name="layouts" mtime="1391534993" type="list" ltype="string">
+		<li type="string">
+			<stringvalue>is	dvorak</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>is</stringvalue>
+		</li>
+	</entry>
+</gconf>
