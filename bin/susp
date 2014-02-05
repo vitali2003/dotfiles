@@ -13,8 +13,8 @@ if [ $? = 0 ]; then
         getXuser;
         if [ x"$XAUTHORITY" != x"" ]; then
             export DISPLAY=":$displaynum"
-            su $user -c 'gnome-screensaver-command --lock'
+            su $user -c '/home/gunnarjv/bin/screenlock'
         fi
     done
-    pm-suspend
+    pm-suspend --auto-quirks
 fi
