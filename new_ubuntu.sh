@@ -1,10 +1,5 @@
 #!/bin/bash
 
-#################
-# For now the command ./.solarized-terminal/install.sh must 
-# be run manually.
-#################
-
 # Run with root privilages
 if [[ $EUID -ne 0 ]]; then
   echo "You must be a root user" 2>&1
@@ -40,7 +35,7 @@ wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master
 # "-" as filename in wget is supposed to be stream, but a file is also created.
 rm "–"
 # Make Zsh default
-chsh -s /bin/zsh;
+su gunnarjv -c "chsh -s /bin/zsh;"
 
 # i3
 echo "deb http://debian.sur5r.net/i3/ $(lsb_release -c -s) universe" >> /etc/apt/sources.list;
@@ -94,6 +89,9 @@ su gunnarjv -c "git clone https://github.com/kien/ctrlp.vim.git .vim/bundle/ctrl
 echo "Installing terminal theme"
 su gunnarjv -c "git clone git://github.com/sigurdga/gnome-terminal-colors-solarized.git .solarized-terminal";
 
+# Copy the oh-my-zsh theme to correct place
+cp .dotfiles/prose.zsh-theme .oh-my-zsh/themes
+
 # Let lid closing suspend computer in i3
 mkdir /etc/acpi/local
 echo "#\!/bin/bash/\n\n/home/gunnarjv/bin/susp" >> /etc/acpi/local/lid.sh.post
@@ -106,4 +104,3 @@ echo "'./.solarized-terminal/install.sh'"
 echo "Set vim as default editor:"
 echo "'sudo update-alternatives --config editor'"
 echo "Install dropbox (no command here)."
-echo "Finally, move prose theme to oh-my-zsh."
