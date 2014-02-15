@@ -26,7 +26,7 @@ echo "Installing must-have software"
 apt-get update;
 software=( "vim" "git" "tmux" "chromium-browser" "ipython" "htop"
            "ack-grep" "autojump" "zsh" "vlc browser-plugin-vlc"
-           "python-pip" "okular" "openjdk-7-jre")
+           "python-pip" "okular" "openjdk-7-jre" "g++" )
 for program in ${software[@]}
 do
     echo "Y" | apt-get install $program
