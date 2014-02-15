@@ -89,9 +89,6 @@ su gunnarjv -c "git clone https://github.com/kien/ctrlp.vim.git .vim/bundle/ctrl
 echo "Installing terminal theme"
 su gunnarjv -c "git clone git://github.com/sigurdga/gnome-terminal-colors-solarized.git .solarized-terminal";
 
-# Copy the oh-my-zsh theme to correct place
-cp .dotfiles/prose.zsh-theme .oh-my-zsh/themes
-
 # Let lid closing suspend computer in i3
 mkdir /etc/acpi/local
 echo "#\!/bin/bash/\n\n/home/gunnarjv/bin/susp" >> /etc/acpi/local/lid.sh.post
