@@ -98,7 +98,12 @@ su gunnarjv -c "git clone git://github.com/sigurdga/gnome-terminal-colors-solari
 mkdir /etc/acpi/local
 echo "#\!/bin/bash/\n\n/home/gunnarjv/bin/susp" >> /etc/acpi/local/lid.sh.post
 
-echo "Remember to run './.solarized-terminal/install.sh"
-echo "and to install dropbox."
-echo "'sudo update-alternatives --config editor' to set vim as default editor"
-echo "aaaand move prose theme to oh-my-zsh."
+echo "TODO:"
+echo "Create an ssh key:"
+echo "'ssh-keygen -t rsa -C 'gunnarjv@gmail.com''"
+echo "Install terminal theme:"
+echo "'./.solarized-terminal/install.sh'"
+echo "Set vim as default editor:"
+echo "'sudo update-alternatives --config editor'"
+echo "Install dropbox (no command here)."
+echo "Finally, move prose theme to oh-my-zsh."
