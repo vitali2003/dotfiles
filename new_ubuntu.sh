@@ -57,7 +57,7 @@ apt-get install sublime-text
 
 # Set up dotfiles
 echo "Cloning my dotfiles repo"
-su gunnarjv -c "git clone https://github.com/gunnarjv/dotfiles.git"
+su gunnarjv -c "git clone https://github.com/gunnarjv/dotfiles.git .dotfiles"
 
 echo "Backing up old dotfiles"
 old_dotfiles_dir=".dotfiles_old/"
