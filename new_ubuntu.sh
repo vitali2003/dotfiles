@@ -31,7 +31,7 @@ git config --global user.name gunnarjv
 git config --global push.default simple
 
 # Install oh-my-zsh
-wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh;
+su gunnarjv -c "wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh;"
 # "-" as filename in wget is supposed to be stream, but a file is also created.
 rm "–"
 # Make Zsh default
