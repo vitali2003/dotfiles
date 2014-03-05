@@ -62,19 +62,21 @@ su gunnarjv -c "git clone https://github.com/gunnarjv/dotfiles.git .dotfiles"
 echo "Backing up old dotfiles"
 old_dotfiles_dir=".dotfiles_old/"
 mkdir -p $old_dotfiles_dir
-dotfiles=( "i3" "vim" "vimrc" "bin" "zshrc" "bash_aliases"
+dotfiles=( "i3" "vim" "vimrc" "zshrc" "bash_aliases"
                    "tmux.conf" "xmodmaprc" "vimperatorrc"
                    "gconf" )
 for dotfile_old in ${dotfiles[@]}
 do
     mv ~/.$dotfile_old $old_dotfiles_dir
 done
+mv ~/bin $old_dotfiles_dir
 
 echo "Creating symlinks to dotfiles repo"
 for dotfile in ${dotfiles[@]}
 do
     ln -s ~/.dotfiles/$dotfile ~/.$dotfile
 done
+ln -s ~/.dotfiles/bin ~/bin
 ln -s ~/.dotfiles/prose.zsh-theme ~/.oh-my-zsh/themes/prose.zsh-theme
 
 # Installing vim plugins
