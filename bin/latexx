@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+# Automatically compiles tex files in pdf and shows them .
+
+latexmk -pdf -pvc -pdflatex="pdflatex -interaction batchmode" $@ > /tmp/latexmk_log 2> /tmp/latexmk_err_log &
+LATEX=$!
+vim $@
+kill -2 $LATEX
+echo "Cleaning up"
+$HOME/bin/clean-latex
+echo "Done cleaning up"

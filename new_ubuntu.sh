@@ -104,3 +104,16 @@ echo "'./.solarized-terminal/install.sh'"
 echo "Set vim as default editor:"
 echo "'sudo update-alternatives --config editor'"
 echo "Install dropbox (no command here)."
+
+# Maybe installs pandoc and latex.
+# 
+# 
+# apt-get install cabal-install (maybe in haskell-platform)
+# apt-get install haskell-platform
+# cabal update
+# cabal install alex happy
+# cabal install pandoc
+#
+# apt-get install texlive
+# apt-get install latexmk (remember the corresponding dotfile)
+# apt-get install texlive-lang-european texlive-lang-english

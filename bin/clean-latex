@@ -1,0 +1,2 @@
+#!/bin/sh
+rm -v *.aux *.log *.bbl *.blg *.fdb_latexmk *.fls *.out *.synctex *.snm *.toc *.vrb *.nav
