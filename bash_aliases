@@ -17,3 +17,5 @@ alias ai='cd ~/Dropbox/hr/ai'
 alias please='sudo'
 
 alias protege='sh /opt/Protege_4.3/run.sh > /dev/null 2>&1 & disown'
+
+alias copy='xclip -selection clipboard'
