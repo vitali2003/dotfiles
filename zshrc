@@ -6,7 +6,7 @@ autoload -U compinit && compinit
 source $HOME/.bash_aliases
 
 # Add personal binary files to path
-export PATH="/home/gunnarjv/bin/:$PATH"
+export PATH="$HOME/bin/:$PATH"
 
 # Oh-my-zsh
 # Path to your oh-my-zsh configuration.
@@ -47,3 +47,6 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 # End oh-my-zsh
+
+# For pandoc (and other cabal)
+export PATH="$PATH:$HOME/.cabal/bin/"
