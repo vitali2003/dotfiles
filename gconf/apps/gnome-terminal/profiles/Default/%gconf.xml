@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <gconf>
-	<entry name="font" mtime="1394054924" type="string">
+	<entry name="font" mtime="1394122503" type="string">
 		<stringvalue>Monospace 9</stringvalue>
 	</entry>
 	<entry name="use_system_font" mtime="1394054924" type="bool" value="false"/>
