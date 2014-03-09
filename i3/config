@@ -191,7 +191,11 @@ exec iskd # Would be better suited in .xinitrc probably
 #exec dropbox start # start dropbox daemon
 exec ~/.dropbox-dist/dropboxd # start dropbox daemon
 
+# Start network manager bar icon
 exec --no-startup-id nm-applet
+
+exec gone-sound-applet
+exec everpad
 
 # scrot & gimp - root
 bindsym Print exec scrot -e 'mv $f /tmp/ && gimp /tmp/$f'
