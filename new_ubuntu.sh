@@ -99,14 +99,12 @@ echo "#\!/bin/bash/\n\n/home/gunnarjv/bin/susp" >> /etc/acpi/local/lid.sh.post
 # Install dropbox
 wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
 
-echo "TODO:"
 echo "Create an ssh key:"
 echo "'ssh-keygen -t rsa -C 'gunnarjv@gmail.com''"
 echo "Install terminal theme:"
 echo "'./.solarized-terminal/install.sh'"
 echo "Set vim as default editor:"
 echo "'sudo update-alternatives --config editor'"
-echo "Install dropbox (no command here)."
 
 # Maybe installs pandoc and latex.
 # 
