@@ -96,6 +96,9 @@ su gunnarjv -c "git clone git://github.com/sigurdga/gnome-terminal-colors-solari
 mkdir /etc/acpi/local
 echo "#\!/bin/bash/\n\n/home/gunnarjv/bin/susp" >> /etc/acpi/local/lid.sh.post
 
+# Install dropbox
+wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+
 echo "TODO:"
 echo "Create an ssh key:"
 echo "'ssh-keygen -t rsa -C 'gunnarjv@gmail.com''"
