@@ -19,3 +19,4 @@ alias please='sudo'
 alias protege='sh /opt/Protege_4.3/run.sh > /dev/null 2>&1 & disown'
 
 alias first='cd $(ls -d */|head -1)'
+

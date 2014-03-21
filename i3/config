@@ -194,7 +194,7 @@ exec ~/.dropbox-dist/dropboxd # start dropbox daemon
 # Start network manager bar icon
 exec --no-startup-id nm-applet
 
-exec gone-sound-applet
+exec gnome-sound-applet
 exec everpad
 
 # scrot & gimp - root
