@@ -1,4 +1,3 @@
-set number			" Some interaction makes the first two lines show rel. num. except for current line 
 set mouse=a			" mouse selects visually?	      
 set expandtab
 set tabstop=4		" tabs are size 4
@@ -33,6 +32,7 @@ set smartcase
 " Open split windows at bottom
 set splitbelow
 
+set number			" Some interaction makes the first two lines show rel. num. except for current line 
 set relativenumber " line numbers
 autocmd InsertEnter * :set number
 autocmd InsertLeave * :set relativenumber
