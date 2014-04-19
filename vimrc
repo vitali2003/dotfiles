@@ -1,26 +1,21 @@
 set mouse=a			" mouse selects visually?	      
-set expandtab
-set tabstop=4		" tabs are size 4
-set autoindent 		" set the cursor at same indent as line above
 set scrolloff=3 " Minimum lines to keep above and below cursor
-" set indentexpr=4		" indentation behaviour based on filetype
 
 "taglist relies on filetype mechanism
 filetype on
 
+set expandtab
+set tabstop=4		" tabs are size 4
+set autoindent 		" set the cursor at same indent as line above
 " smart autoindent?
 set ai
 filetype indent on
 set shiftwidth=4 
 
-set incsearch " highlight as we search however
-
-set backupdir-=.
-set backupdir^=~/tmp,/tmp
-
+set incsearch " highlight as we search
 
 " persistent undo buffer
-set undodir=/home/gunnarjv/vimundo/
+set undodir=/home/gunnarjv/.vimundo/
 set undofile
 
 nore ; :

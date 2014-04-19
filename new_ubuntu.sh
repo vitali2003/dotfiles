@@ -88,6 +88,9 @@ apt-get install exuberant-ctags
 su gunnarjv -c "git clone https://github.com/vim-scripts/taglist.vim.git .vim/bundle/taglist.vim"
 su gunnarjv -c "git clone https://github.com/kien/ctrlp.vim.git .vim/bundle/ctrlp.vim"
 
+# Persistent vim undo buffer 
+su gunnarjv -c "mkdir ~/.vimundo"
+
 # Install terminal theme
 echo "Installing terminal theme"
 su gunnarjv -c "git clone git://github.com/sigurdga/gnome-terminal-colors-solarized.git .solarized-terminal";
