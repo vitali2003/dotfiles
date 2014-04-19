@@ -37,6 +37,10 @@ autocmd InsertLeave * :set relativenumber
 set runtimepath^=~/.vim/bundle/nerdtree
 set runtimepath^=~/.vim/bundle/taglist.vim
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+set runtimepath^=~/.vim/bundle/syntastic
+
+" for pyflakes
+filetype plugin indent on
 
 "Overwrite <Leader>, that is backslash by default.
 :let mapleader = ","
