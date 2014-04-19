@@ -72,16 +72,16 @@ let Tlist_GainFocus_On_ToggleOpen = 1
 :map <Leader>t :TlistToggle<CR>
 
 "Appearance options
-colorscheme molokai
 
 " The below might not do anything.
 set bg=dark
 let g:zenburn_high_Contrast = 1
 let g:liquidcarbon_high_contrast = 1
-let g:molokai_original = 1
 let g:Powerline_symbols = 'compatible'
 let g:Powerline_cache_enabled = 1
 let g:Powerline_cache_file = expand('$TMP/Powerline.cache')
 set t_Co=256
 let g:rehash256 = 1
 
+colorscheme molokai
+let g:molokai_original = 1
