@@ -1,3 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =3
 let g:netrw_dirhist_1='/home/gunnarjv/Desktop'
+let g:netrw_dirhist_2='/home/gunnarjv/Documents/repos/gagnaskipan/project2'
+let g:netrw_dirhist_3='/home/gunnarjv/Documents/repos/gagnaskipan/project2/solution'
