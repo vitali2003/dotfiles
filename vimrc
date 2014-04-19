@@ -6,6 +6,7 @@ filetype on
 
 set expandtab
 set tabstop=4		" tabs are size 4
+set softtabstop=4 " insert/delete 4 spaces when hitting a TAB/BACKSPACE
 set autoindent 		" set the cursor at same indent as line above
 " smart autoindent?
 set ai
