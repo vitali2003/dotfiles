@@ -1,4 +1,3 @@
-set relativenumber			" line numbers
 set number			" Some interaction makes the first two lines show rel. num. except for current line 
 set mouse=a			" mouse selects visually?	      
 set expandtab
@@ -34,15 +33,7 @@ set smartcase
 " Open split windows at bottom
 set splitbelow
 
-" we want relative number not in insert mode
-function! NumberToggle()
-	if(&relativenumber == 1)
-		set number
-	else
-	    set relativenumber
-    endif
-endfunc
-
+set relativenumber " line numbers
 autocmd InsertEnter * :set number
 autocmd InsertLeave * :set relativenumber
 
