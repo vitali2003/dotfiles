@@ -46,7 +46,7 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 :map <Leader>j <C-w>j
 :map <Leader>k <C-w>k
 
-:map <Leader>w <C-w>q "Close window
+:map <Leader>w <C-w>q
 :map <Leader>s :w<CR>
 :map <Leader>n :NERDTreeToggle<CR>
 
