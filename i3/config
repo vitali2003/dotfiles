@@ -187,6 +187,9 @@ bar {
 bind Control+67 exec iskd
 bind Control+68 exec setxkbmap is
 
+bindsym $mod+p workspace prev
+bindsym $mod+n workspace next
+
 exec iskd # Would be better suited in .xinitrc probably
 #exec dropbox start # start dropbox daemon
 exec ~/.dropbox-dist/dropboxd # start dropbox daemon
@@ -198,11 +201,19 @@ exec gnome-sound-applet
 exec everpad
 
 # scrot & gimp - root
-bindsym Print exec scrot -e 'mv $f /tmp/ && gimp /tmp/$f'
+bindsym Print exec scrot -e 'mv $f /tmp/' # && gimp /tmp/$f'
 # scrot & gimp - select window or rectangle
-bindsym Mod1+Print exec scrot -s -e 'mv $f /tmp/ && gimp /tmp/$f'
+bindsym Mod1+Print exec scrot -s -e 'mv $f /tmp/' # && gimp /tmp/$f'
 
 #Start firefox (browser)
 bindsym $mod+b exec firefox
-bindsym $mod+n exec nautilus --no-desktop
+bindsym $mod+Shift+n exec nautilus --no-desktop
 bindsym $mod+w exec wicd-client
+
+# Open programs at startup, would do differently but, firefox is annoying
+exec --no-startup-id i3-msg 'workspace 4:Translate; exec chromium-browser --app=http://snara.is'
+exec --no-startup-id i3-msg 'workspace 4:Translate; exec chromium-browser --app=http://translate.google.com'
+exec --no-startup-id i3-msg 'workspace 1; exec firefox -no-remote'
+
+exec --no-startup-id i3-msg 'workspace number 1'
+
