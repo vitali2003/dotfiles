@@ -31,9 +31,8 @@ nore ; :
 set ignorecase
 set smartcase
 
-" Open split windows at bottom and to the right.
+" Open split windows at bottom
 set splitbelow
-set splitright
 
 " we want relative number not in insert mode
 function! NumberToggle()
@@ -73,7 +72,9 @@ let Tlist_GainFocus_On_ToggleOpen = 1
 :map <Leader>t :TlistToggle<CR>
 
 "Appearance options
-"
+colorscheme molokai
+
+" The below might not do anything.
 set bg=dark
 let g:zenburn_high_Contrast = 1
 let g:liquidcarbon_high_contrast = 1
@@ -82,5 +83,5 @@ let g:Powerline_symbols = 'compatible'
 let g:Powerline_cache_enabled = 1
 let g:Powerline_cache_file = expand('$TMP/Powerline.cache')
 set t_Co=256
-colorscheme molokai
+let g:rehash256 = 1
 
