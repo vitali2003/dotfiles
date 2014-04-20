@@ -47,6 +47,13 @@ set runtimepath^=~/.vim/bundle/nerdcommenter
 " for pyflakes
 filetype plugin indent on
 
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_auto_loc_list=1
+let g:syntastic_loc_list_height=5
+
+
 "Overwrite <Leader>, that is backslash by default.
 :let mapleader = ","
 
