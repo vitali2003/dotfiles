@@ -40,6 +40,8 @@ autocmd InsertLeave * :set relativenumber
 set runtimepath^=~/.vim/bundle/nerdtree
 set runtimepath^=~/.vim/bundle/taglist.vim
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+" Requires installation. See github
+set runtimepath^=~/.vim/bundle/YouCompleteMe
 " Requires flake8:
 set runtimepath^=~/.vim/bundle/syntastic
 set runtimepath^=~/.vim/bundle/nerdcommenter
@@ -52,7 +54,6 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 let g:syntastic_auto_loc_list=1
 let g:syntastic_loc_list_height=5
-
 
 "Overwrite <Leader>, that is backslash by default.
 :let mapleader = ","
