@@ -45,9 +45,8 @@ set runtimepath^=~/.vim/bundle/YouCompleteMe
 " Requires flake8:
 set runtimepath^=~/.vim/bundle/syntastic
 set runtimepath^=~/.vim/bundle/nerdcommenter
+set runtimepath^=~/.vim/bundle/gundo.vim
 
-" for pyflakes
-filetype plugin indent on
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -77,7 +76,9 @@ let Tlist_GainFocus_On_ToggleOpen = 1
 
 " Map commenter
 :map <Leader>/ :call NERDComment(1, 'toggle')<CR>
-"
+
+:map <Leader>g :GundoToggle<CR>
+
 "Appearance options
 
 " The below might not do anything.
