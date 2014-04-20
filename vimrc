@@ -67,7 +67,7 @@ let Tlist_GainFocus_On_ToggleOpen = 1
 :map <Leader>t :TlistToggle<CR>
 
 " Map commenter
-:map <Leader>u :call NERDComment(1, 'toggle')<CR>
+:map <Leader>c :call NERDComment(1, 'toggle')<CR>
 "
 "Appearance options
 
