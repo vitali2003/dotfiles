@@ -40,6 +40,7 @@ autocmd InsertLeave * :set relativenumber
 set runtimepath^=~/.vim/bundle/nerdtree
 set runtimepath^=~/.vim/bundle/taglist.vim
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+" Requires flake8:
 set runtimepath^=~/.vim/bundle/syntastic
 set runtimepath^=~/.vim/bundle/nerdcommenter
 
