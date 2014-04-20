@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <gconf>
+	<entry name="default_show_menubar" mtime="1397947552" type="bool" value="false"/>
 	<entry name="font" mtime="1397940842" type="string">
 		<stringvalue>Monospace 9</stringvalue>
 	</entry>

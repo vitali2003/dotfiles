@@ -1,6 +1,9 @@
 set mouse=a			" mouse selects visually?	      
 set scrolloff=3 " Minimum lines to keep above and below cursor
 
+" Allows one to paste without smart indent
+set pastetoggle=<F2>
+
 "taglist relies on filetype mechanism
 filetype on
 
@@ -38,6 +41,7 @@ set runtimepath^=~/.vim/bundle/nerdtree
 set runtimepath^=~/.vim/bundle/taglist.vim
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set runtimepath^=~/.vim/bundle/syntastic
+set runtimepath^=~/.vim/bundle/nerdcommenter
 
 " for pyflakes
 filetype plugin indent on
@@ -62,6 +66,9 @@ filetype plugin indent on
 let Tlist_GainFocus_On_ToggleOpen = 1
 :map <Leader>t :TlistToggle<CR>
 
+" Map commenter
+:map <Leader>u :call NERDComment(1, 'toggle')<CR>
+"
 "Appearance options
 
 " The below might not do anything.
