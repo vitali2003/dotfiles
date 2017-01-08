@@ -1,2 +1,2 @@
-et dpms force off
+xset dpms force off
 i3lock --color 000000
