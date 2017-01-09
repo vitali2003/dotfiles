@@ -154,19 +154,23 @@ bindsym Escape mode "default"
 bindsym $mod+r mode "resize"
  
 #Locks screen.
-bindsym Control+Mod1+l exec /home/gunnarjv/bin/screenlock
+bindsym Control+Mod1+l exec /home/$USER/bin/screenlock
 
 # Suspends computer
-bindsym Control+Mod1+s exec /home/gunnarjv/bin/susp
+bindsym Control+Mod1+s exec /home/$USER/bin/susp
 
 # Changes volume
-bindsym XF86AudioMute exec /home/gunnarjv/bin/mute
+bindsym XF86AudioMute exec /home/$USER/bin/mute
 # E520
 #bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5%
 #bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -- -5% 
 # E540
 bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 5%+
 bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 5%-
+
+# Changes brightness
+bindsym XF86MonBrightnessUp exec xbacklight -inc 5 -time 1 -steps 1
+bindsym XF86MonBrightnessDown exec xbacklight -dec 5 -time 1 -steps 1
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -192,7 +196,7 @@ bindsym $mod+n workspace next
 
 exec iskd # Would be better suited in .xinitrc probably
 #exec dropbox start # start dropbox daemon
-exec ~/.dropbox-dist/dropboxd # start dropbox daemon
+#exec ~/.dropbox-dist/dropboxd # start dropbox daemon
 
 # Start network manager bar icon
 exec --no-startup-id nm-applet
