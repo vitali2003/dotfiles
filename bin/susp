@@ -1,20 +1,11 @@
 #!/bin/bash
 
 # On lid close show lock screen and suspend laptop.
-
 sudo echo "" || exit
 
-. /usr/share/acpi-support/power-funcs
-
-grep -q closed /proc/acpi/button/lid/*/state
+grep -q open /proc/acpi/button/lid/*/state
 if [ $? = 0 ]; then
-    for x in /tmp/.X11-unix/*; do
-        displaynum=`echo $x | sed s#/tmp/.X11-unix/X##`
-        getXuser;
-        if [ x"$XAUTHORITY" != x"" ]; then
-            export DISPLAY=":$displaynum"
-            su $user -c '/home/gunnarjv/bin/screenlock'
-        fi
-    done
-    pm-suspend --auto-quirks
+    # Can't simply use '$USER' variable so hardcode it for now
+    su asdf -c '/home/asdf/bin/screenlock'
+    pm-suspend
 fi
