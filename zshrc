@@ -1,3 +1,5 @@
+#hello
+
 # autojump and tab completion j
 source /usr/share/autojump/autojump.zsh 
 autoload -U compinit && compinit
