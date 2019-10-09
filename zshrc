@@ -1,4 +1,4 @@
-#hello
+#hello again
 
 # autojump and tab completion j
 source /usr/share/autojump/autojump.zsh 
